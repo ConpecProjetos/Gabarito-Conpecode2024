@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+
+            width: 100%;
+            height: 100vh;
+            
+            background-color: dimgray;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            text-align: center;
+
+            width: fit-content;
+
+            background-color: wheat;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            
+            height: 100%;
+        }
+
+        .side_column {
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+            height: 60vh;
+
+            padding: 1em 0em 1em 1em;
+        }
+
+        .box {
+            display: flex;
+            width: max-content;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 800;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #box1 {
+            height: max-content;
+            padding-bottom: 1em;
+        }
+
+        #box2 {
+            background-color: greenyellow;
+            width: 100%;
+            height: 50%;
+            margin-bottom: 1em;
+        }
+
+        #box3 {
+            background-color: blueviolet;
+            width: 100%;
+            height: 50%;
+        }
+
+        #box4 {
+            background-color: yellow;
+            width: 35vw;
+            margin: 1em 1em 1em 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="box1" class="column box">
+            <div class="row">
+                <div class="side_column">
+                    <div id="box2" class="box">box 2</div>
+                    <div id="box3" class="box">box 3</div>
+                </div>
+                <div id="box4" class="box">box 4</div>
+            </div>
+            box 1
+        </div>
+    </div>
+</body>
+</html>
